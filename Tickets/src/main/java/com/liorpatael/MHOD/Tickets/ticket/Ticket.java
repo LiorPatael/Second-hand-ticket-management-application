@@ -65,10 +65,5 @@ public class Ticket {
         this.username = username;
     }
 	
-//	insert into ticket(name, description, current_date,price)
-//	values('Lior', 'מוכר כרטיס נגד הצהבת', sysdate(),200);
-//	insert into ticket(name, description, date,price)
-//	values('David', 'מוכר כרטיס נגד הפועל חיפה', sysdate(),200);
-//	insert into ticket(name, description, date,price)
-//	values('Dudi', 'מוכר כרטיס נגד מכבי נתניה', sysdate(),70);
+
 }
