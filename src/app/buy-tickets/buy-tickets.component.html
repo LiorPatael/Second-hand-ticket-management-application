@@ -1,0 +1,26 @@
+<h1>כרטיסים לקנייה</h1>
+<div class="container" >
+
+<table class="table">
+    <caption>כרטיסים לקנייה</caption>
+    <thead>
+        <tr>
+           <th>תאריך פרסום</th> 
+           <th>תיאור</th>
+           <th>מחיר</th>
+           <th>עדיין רלוונטי</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let buy_ticket of buy_tickets">
+           <td>{{buy_ticket.date | date | uppercase}}</td> 
+           <td>{{buy_ticket.details}}</td>
+           <td>{{buy_ticket.phone}}</td>
+           <td>{{buy_ticket.flag}}</td>
+        </tr>
+    </tbody>
+
+
+</table>
+</div>
+

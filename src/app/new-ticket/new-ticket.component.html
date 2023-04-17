@@ -1,0 +1,24 @@
+<h1>כרטיס למכירה</h1>
+
+<div class="container">
+    <fieldset class="form-group">
+        <label>שם</label>
+    <input type="text" [(ngModel)]="newTicket.name" class="form-control" name="description" required="required">
+</fieldset>
+
+    <fieldset class="form-group">
+        <label>תאריך המשחק</label>
+    <input type="date" [ngModel]="newTicket.date | date: 'yyyy-MM-dd'  "
+    (ngModelChange)="newTicket.date =$event"  
+    class="form-control" name="targetDate" required="required">
+</fieldset>
+<fieldset class="form-group">
+    <label>תיאור</label>
+<input type="text" [(ngModel)]="newTicket.description" class="form-control" name="description" required="required">
+</fieldset>
+<fieldset class="form-group">
+    <label>מחיר</label>
+<input type="number" [(ngModel)]="newTicket.price" class="form-control" name="description" required="required">
+</fieldset>
+<button (click)="pushTicket()">להוספה</button>
+</div>

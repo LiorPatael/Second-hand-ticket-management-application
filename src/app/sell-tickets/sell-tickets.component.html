@@ -1,0 +1,27 @@
+<h1>כרטיסים למכירה</h1>
+<div class="container" >
+
+<table class="table">
+    <caption>כרטיסים למכירה</caption>
+    <thead>
+        <tr>
+           <th>תאריך פרסום</th> 
+           <th>תיאור</th>
+           <th>מחיר</th>
+           <th>שם</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sell_ticket of sell_tickets">
+           <td>{{sell_ticket.date | date | uppercase}}</td> 
+           <td>{{sell_ticket.description}}</td>
+           <td>{{sell_ticket.price}}</td>
+           <td>{{sell_ticket.name}}</td>
+        </tr>
+    </tbody>
+
+
+</table>
+
+<div class="row"><button (click)="addNewTicketForSell()" class="btn btn-succsess">למכירת כרטיס</button></div>
+</div>

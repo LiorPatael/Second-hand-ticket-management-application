@@ -1,0 +1,19 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <div>
+            <a href="https://mhaifafc.com/games" class="navbar-brand" >לבדיקת זמינות כרטיסים מהמועדון</a>
+        </div>
+
+        <ul class="navbar-nav">
+            <li> <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/welcome/liorpatael" class="nav-link navbar-brand">בית</a></li>
+            <li> <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/sell-ticket" class="nav-link navbar-brand">למכירת כרטיסים</a></li>
+            <li> <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/buy-ticket" class="nav-link navbar-brand">לקניית כרטיסים</a></li>
+        </ul>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+            <li> <a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class="nav-link navbar-brand">להתחברות</a></li>
+            <li> <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link navbar-brand">להתנתקות</a></li>
+        </ul>
+
+    </nav>
+</header>
